@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap');
+body,
+html {
+    font-family: 'Inter', sans-serif;;
+}
+
+#header {
+    width: 100%;
+    background-color: transparent;
+    transition: background ease-out 0.2s;
+}
+
+#header.active {
+    position: fixed;
+    background: white;
+    box-shadow: 0 0 30px rgba(0,0,0,0.12);
+    z-index: 9999;
+}
+
+#header .navbar-collapse {
+    width: auto;
+}
+
+#header .nav-link {
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-left: 0;
+    padding-right: 0;
+    color: black;
+    border-bottom: solid 4px transparent;
+} 
+
+#header .nav-link:hover {
+    border-bottom: solid 4px var(--secondary);
+    color: var(--secondary)
+}
+
+
+#slider h1 {
+    color: black;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+#slider h4 {
+    color: var(--secondary);
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+#servicos a.destaque {
+    display: block;
+    background: var(--light);
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    color: #252b3d;
+    text-decoration: none;
+    transition: all ease-out 0.2s;
+}
+
+#servicos a.destaque:hover {
+    background: white;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,.12);
+    transform: scale(1.05);
+}
+
+#servicos a.destaque .img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+#servicos a.destaque .img-container img {
+    max-height: 160px;
+}
+
+#depoimentos .depoimento {
+    background-color: var(--light);
+    border-radius: 5px;
+    display: flex;
+    padding: 30px;
+}
+
+#depoimentos .depoimento .quote {
+    max-width: 35px;
+}
+
+#depoimentos .depoimento .name {
+    color: var(--medium);
+}
+
+#depoimentos .depoimento .name span {
+    color: var(--dark);
+    font-weight: 700;
+}
+
+#contato .email {
+    border-radius: 5px;
+    background-color: #252b3d;
+    color: #fff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 120px 30px;
+  }
+  
+  #contato .email img {
+    position: absolute;
+    left: 30px;
+    top: -30px;
+  }
+  
+  #contato .email form {
+    width: 60%;
+    display: flex;
+  }
+  
+  
+  #contato .email .form-control,
+  #contato .email .form-control::placeholder {
+    background: none;
+    color: #fff;
+  }
+  
+
+#contato .email h2,h6 {
+    color: white;
+}
+
+#contato .email h6 {
+    text-transform: lowercase;
+    font-size: 50;
+}
+
+#contato ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  #contato ul li {
+    display: flex;
+    list-style-type: none;
+    margin-left: 25px;
+  }
+  
+  #contato ul li:first-child {
+    margin-left: 0;
+  }
+  
+  #contato ul li a {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    transition: all ease-out 0.2s;
+  }
+  
+  #contato ul li a:hover {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+  }
+  
+  #contato ul li img {
+    max-height: 20px;
+  }
